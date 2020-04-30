@@ -1,3 +1,4 @@
 # IDE specific ignorance.
 .idea
+.vscode
 *.iml
