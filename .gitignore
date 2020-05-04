@@ -1,4 +1,6 @@
 # IDE specific ignorance.
 .idea
 .vscode
+out/*
+!out/*.gitkeep
 *.iml
