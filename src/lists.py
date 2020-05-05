@@ -4,6 +4,11 @@
 my_list = [1, 2, 3]
 my_list = ["STRING", 100, 23.2]
 
+# OR
+
+my_list = [0] * 3
+print(my_list)
+
 print(len(my_list)) # Just like string. 'len()' function to get the size.
 
 my_list = ['one', 'two', 'three']
@@ -49,6 +54,10 @@ num_list = [4, 1, 8, 3]
 print(type(new_list.sort()))  # 'sort()' returns nothing except 'NoneType'.
 print(new_list)               # Sorted list.
 
+# OR
+
+print(sorted(new_list))       # Build-in function 'sorted()'
+
 num_list.sort()               # Does not return anything but sort.
 print(num_list)
 
@@ -76,3 +85,39 @@ print(matrix[1][1])     # Grab an exact item.
 first_column = [row[0] for row in matrix]   # Iterating list by list and return 0th element.
 print(type(first_column))
 print(first_column)
+
+# List comprehensions (flatten the for loop).
+my_string = 'hello'
+my_list = []
+
+for letter in my_string:
+    my_list.append(letter)
+
+print(my_list)
+
+my_list = [letter for letter in "Hello, World"]
+print(my_list)
+
+my_list = [num for num in range(0, 10)]
+print(my_list)
+
+my_list = [num ** 2 for num in range(0, 11)]
+print(my_list)
+
+# With other flow controls, like 'if'.
+my_list = [num ** 2 for num in range(0, 11) if num % 2 == 0]
+print(my_list)
+
+my_list = [num if num % 2 == 0 else 'ODD' for num in range(0, 11)]
+print(my_list)
+
+# Nested 'for' loops.
+my_list = []
+for x in [2, 4, 6]:
+    for y in [4, 40, 100]:
+        my_list.append(x * y)
+
+print(my_list)
+
+my_list = [x * y for x in [2, 4, 6] for y in [4, 40, 100]]
+print(my_list)
