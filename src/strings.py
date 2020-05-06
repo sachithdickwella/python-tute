@@ -126,3 +126,10 @@ num = 24.45678
 print(f"My 10 character, four decimal number is:{num:{10}.{6}}") # Precision refers to total number 
                                                                  # of digits.
 print(f"My 10 character, four decimal number is:{num:10.4f}")    # Equivalent to 'format()' function.
+
+import string
+
+print(string.ascii_uppercase)
+
+print('A'.isupper())    # Supplementary functions.
+print('a'.islower())
