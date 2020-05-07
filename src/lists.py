@@ -26,6 +26,7 @@ print(my_list[-1])
 print(my_list[::-1])    # Reverse the list just like strings.
 print(my_list[2::2])
 print(my_list[-2::-2])
+print(my_list[-2:-1:-1])
 
 # Mutate lists.
 my_list[0] = "ONE All Caps"
