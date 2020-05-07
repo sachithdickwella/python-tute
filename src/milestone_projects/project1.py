@@ -5,7 +5,8 @@
 # Milestone Project 1 
 # #############################################################################
 
-from IPython.display import clear_output
+from IPython.display import clear_output # Specifically for IPython notebook environment for 
+                                         # clearing output.
 import random
 
 CONST_LENGTH = 9
