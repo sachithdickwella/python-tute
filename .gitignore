@@ -2,5 +2,7 @@
 .idea
 .vscode
 out/*
+__pycache__
 !out/*.gitkeep
 *.iml
+*.txt
