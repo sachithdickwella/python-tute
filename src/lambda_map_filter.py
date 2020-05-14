@@ -67,3 +67,7 @@ print(square(2))
 # #####################################
 print(list(map(lambda num: num ** 2, numbers)))
 print(list(filter(lambda num: num % 2 == 0, numbers)))
+
+# EXTRA LAMBDA with if-else
+func = lambda num: 'EVEN' if num % 2 == 0 else 'ODD'
+print(func(10))
