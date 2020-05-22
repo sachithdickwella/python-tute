@@ -71,3 +71,22 @@ print(my_circle.PI)
 
 print(my_circle30r.PI)
 print(Circle().PI)
+
+# Callable class references.
+class Super():
+
+    def __call__(self, x):
+        print(f"Do low level process with {x}")
+
+
+class Model(Super):
+
+    def __init__(self, y):
+        print("Hello" + str(y))
+
+    def f(self, x):
+        print(x)
+
+
+m = Model(0)
+m(20)   # Execute class object reference (Could be own or super class).
