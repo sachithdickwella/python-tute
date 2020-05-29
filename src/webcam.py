@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import cv2 as cv
+import torch
 
 cv.namedWindow('Cam1')
 vc = cv.VideoCapture(0)
@@ -14,12 +15,11 @@ while r_val:
 
     r_val, frame = vc.read()
 
-    print(frame)    # 2D array of image.
+    x = torch.IntTensor(frame)
+    print(x.transponse(axis=1))    # 2D array of image.
     
     key = cv.waitKey(10)
     if key == 27:   # Exit on 'Esc' key.
         break
 
 cv.destroyWindow('Cam1')
-
-
