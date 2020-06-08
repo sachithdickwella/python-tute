@@ -3,6 +3,7 @@
 
 import cv2 as cv
 import torch
+import numpy as np
 
 cv.namedWindow('Cam1')
 vc = cv.VideoCapture(0)
@@ -15,8 +16,8 @@ while r_val:
 
     r_val, frame = vc.read()
 
-    x = torch.IntTensor(frame)
-    print(x.transponse(axis=1))    # 2D array of image.
+    x = torch.IntTensor(np.transpose(frame, axes=(2, 0, 1)))
+    print(x.shape)    # 2D array of image.
     
     key = cv.waitKey(10)
     if key == 27:   # Exit on 'Esc' key.
