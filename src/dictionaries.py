@@ -20,3 +20,5 @@ print(d)
 print(d.keys())     # Get all the keys as a list.
 print(d.values())   # Get all the values as a list.
 print(d.items())    # Get all the items (key: value) as a tuple.
+
+print('apple' in prices_lookup)
