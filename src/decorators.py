@@ -24,9 +24,6 @@ my_new_func = hello()
 print(my_new_func())
 
 # Pass functions into a function.
-def hello():
-    return "Hello, Sachith!"
-
 def other(func):
     print('Other code execute here')
     print(func())
@@ -45,10 +42,6 @@ def new_decorator(original_func):
         print('Some extra code after original function!')
 
     return wrap_func()
-
-
-def func_need_decorator():
-    print("I want be decorated!")
 
 new_decorator(func_need_decorator)      # Decoration here.
 
