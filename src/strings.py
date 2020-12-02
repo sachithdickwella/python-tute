@@ -85,7 +85,7 @@ print("First : %s, Second : %5.2f, Third : %r, Fourth : %d" % ("Hi", 3.1415, "By
 print("This is a string {}".format("INSERTED"))
 print("The {} {} {}".format("fox", "brown", "quick"))
 print("The {2} {1} {0}".format("fox", "brown", "quick"))
-print("The {0} {0} {0}".format("fox", "brown", "quick"))        # Repeat by refering same index.
+print("The {0} {1} {2}".format("fox", "brown", "quick"))        # Repeat by refering same index.
 print("The {q} {b} {f}".format(f="fox", b="brown", q="quick"))  # Assigning variable to index.
 print("The {q} {q} {q}".format(f="fox", b="brown", q="quick"))  # Repeat by refering same index variable.
 
@@ -133,3 +133,13 @@ print(string.ascii_uppercase)
 
 print('A'.isupper())    # Supplementary functions.
 print('a'.islower())
+
+# Find string in a larger string content.
+hello = 'Hello, World!'
+idx = hello.find('Wor') # Return the index or -1 if not found.
+print(idx)
+
+# OR
+
+idx = hello.index('lo') # Return the index or throws an error -> ValueError: substring not found. 
+print(idx)
