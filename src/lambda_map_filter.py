@@ -48,14 +48,14 @@ print(list(filtered))
 # #####################################
 # Lambda expressions - step by step
 # #####################################
-def square(num):
+def square1(num):
     return num ** 2
-print(square(2))
+print(square1(2))
 
 # Equivalent to above function declaration
 
-def square(num): return num ** 2
-print(square(2))
+def square2(num): return num ** 2
+print(square2(2))
 
 # enforce with lambda expression
 
