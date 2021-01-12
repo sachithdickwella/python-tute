@@ -77,17 +77,17 @@ my_func4(10, 30, 40, 50, fruit='apple', food='orange', animal="dog")
 print(str(['a', 'b', 'c']))
 
 # Task #1.
-def my_func(text):
+def my_func1(text):
     return ''.join([t.upper() if i % 2 == 0 else t.lower() for i,t in enumerate(text)])
 
-print(my_func("Sachith Dickwella"))
+print(my_func1("Sachith Dickwella"))
 
 # Task #2
-def my_func(num):
+def my_func5(num):
     for i in range(0, len(num)):
         print(num[i:i + 2])
         if num[i:i + 2] == [3, 3]:
             return True
     return False
 
-print(my_func([1, 3, 3]))
+print(my_func5([1, 3, 3]))
