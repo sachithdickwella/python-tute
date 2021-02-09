@@ -7,7 +7,7 @@ print('''
 # #############################################################################
 ''')
 
-class Animal():
+class Animal1():
 
     def __init__(self):
         print('ANIMAL CREATED')
@@ -19,7 +19,7 @@ class Animal():
         print('I am eating')
 
 
-class Dog(Animal):
+class Dog(Animal1):
 
     def __init__(self):
         super().__init__()      # 'super()' call is NOT MANDATORY
