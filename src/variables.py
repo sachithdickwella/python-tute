@@ -22,7 +22,7 @@
 # Local namespace
 # #############################################################################
 
-lambda num: num + 2     # 'num' belongs to the local namespace
+lambda num: num + 2  # 'num' belongs to the local namespace
 
 # ############################################################################
 # Enclosing function locals namespace
@@ -31,6 +31,7 @@ lambda num: num + 2     # 'num' belongs to the local namespace
 # GLOBAL
 name = "THIS IS A GLOBAL STRING"
 
+
 def greet():
     # ENCLOSING
     name = "Sammy"
@@ -38,9 +39,10 @@ def greet():
     def hello():
         # LOCAL
         name = "I'M A NAME"
-        print(f'Hello {name}') 
+        print(f'Hello {name}')
 
     hello()
+
 
 greet()
 
@@ -48,13 +50,14 @@ greet()
 # Built-in function namespaces.
 # #############################################################################
 
-_, _, _ = len, range, open      # Built-in names (functions in this case)
-                                # Careful not ot OVERRIDE one of these
+_, _, _ = len, range, open  # Built-in names (functions in this case)
+# Careful not ot OVERRIDE one of these
 
 # Update global level names/variable.
 
 x = 50
 y = 100
+
 
 def func():
     global x
@@ -62,6 +65,7 @@ def func():
     # Now this is a global variable reassignment.
     x = 200
     y = 50
+
 
 func()
 
